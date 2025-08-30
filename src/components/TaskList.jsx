@@ -75,7 +75,7 @@ function TaskList({ tasks, setTasks }) {
         >
           <option value="priority">Priority</option>
           <option value="category">Category</option>
-          <option value="none">None (Flat List)</option>
+          <option value="none">None</option>
         </select>
       </div>
 

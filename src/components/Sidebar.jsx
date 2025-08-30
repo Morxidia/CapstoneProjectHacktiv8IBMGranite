@@ -29,12 +29,6 @@ function Sidebar({ tasks, setTasks, activeView, setActiveView, onOpenAddModal })
     icon: <FontAwesomeIcon icon={faCheckCircle} className="w-4 h-4 " />, 
     count: completedTasks 
   },
-  { 
-    id: 'priority', 
-    label: 'Priority', 
-    icon: <FontAwesomeIcon icon={faFire} className="w-4 h-4 text-orange-400" />, 
-    count: tasks.filter(t => t.priority === 'high').length 
-  },
 ]
   return (
     <div className={`

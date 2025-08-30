@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import SubtaskList from './SubtaskList';
 import { PRIORITY_CONFIG, CATEGORY_CONFIG } from '../config/taskConfig';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboard, faHourglass, faCheckCircle, faFire, faBriefcase, faHome, faArrowLeft, faArrowRight, faCheck, faCancel, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faPen } from '@fortawesome/free-solid-svg-icons/faPen';
+
 
 function TaskItem({ task, onToggle, onDelete, onUpdate, isSelected, onSelect }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -152,14 +156,14 @@ function TaskItem({ task, onToggle, onDelete, onUpdate, isSelected, onSelect }) 
                   className="p-2 text-green-600 hover:bg-green-50 rounded-lg transition-colors"
                   title="Save"
                 >
-                  ✅
+                  <FontAwesomeIcon icon={faCheck} className="w-4 h-4 " />
                 </button>
                 <button
                   onClick={handleCancelEdit}
                   className="p-2 text-slate-600 hover:bg-slate-50 rounded-lg transition-colors"
                   title="Cancel"
                 >
-                  ❌
+                  <FontAwesomeIcon icon={faCancel} className="w-4 h-4 " />
                 </button>
               </>
             ) : (
@@ -169,14 +173,14 @@ function TaskItem({ task, onToggle, onDelete, onUpdate, isSelected, onSelect }) 
                   className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
                   title="Edit"
                 >
-                  ✏️
+                  <FontAwesomeIcon icon={faPen} className="w-4 h-4 " />
                 </button>
                 <button
                   onClick={() => onDelete(task.id)}
                   className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                   title="Delete"
                 >
-                  🗑️
+                  <FontAwesomeIcon icon={faTrash} className="w-4 h-4 " />
                 </button>
               </>
             )}
