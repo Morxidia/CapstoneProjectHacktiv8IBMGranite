@@ -30,22 +30,10 @@ function Sidebar({ tasks, setTasks, activeView, setActiveView, onOpenAddModal })
     count: completedTasks 
   },
   { 
-    id: 'high-priority', 
-    label: 'High Priority', 
+    id: 'priority', 
+    label: 'Priority', 
     icon: <FontAwesomeIcon icon={faFire} className="w-4 h-4 text-orange-400" />, 
     count: tasks.filter(t => t.priority === 'high').length 
-  },
-  { 
-    id: 'work', 
-    label: 'Work', 
-    icon: <FontAwesomeIcon icon={faBriefcase} className="w-4 h-4" />, 
-    count: tasks.filter(t => t.category === 'work').length 
-  },
-  { 
-    id: 'personal', 
-    label: 'Personal', 
-    icon: <FontAwesomeIcon icon={faHome} className="w-4 h-4" />, 
-    count: tasks.filter(t => t.category === 'personal').length 
   },
 ]
   return (
