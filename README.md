@@ -29,29 +29,29 @@ Crankly is a modern, feature-rich task management application built with React, 
 **Installation Steps**
 1. Clone and setup
   ```bash
-    git clone https://github.com/Morxidia/CapstoneProjectHacktiv8IBMGranite.git
-    cd focus-forge
-    npm install
+  git clone https://github.com/Morxidia/CapstoneProjectHacktiv8IBMGranite.git
+  cd focus-forge
+  npm install
 2. Start development server
   ```bash
-    npm run dev
+  npm run dev
 3. Build for production
   ```bash
-    npm run build
+  npm run build
 
 ---
 
 # AI Support Explanation
 This project was developed with comprehensive AI assistance through IBM Granite Model, and Watsonx AI chat, which provided:
 
-    Architecture Guidance: Recommended React + Vite + Tailwind CSS stack
+- Architecture Guidance: Recommended React + Vite + Tailwind CSS stack
 
-    Code Generation: Produced complete component templates and logic
+- Code Generation: Produced complete component templates and logic
 
-    Problem Solving: Debugged issues and optimized performance
+- Problem Solving: Debugged issues and optimized performance
 
-    Documentation: Created this comprehensive documentation
+- Documentation: Created this comprehensive documentation
 
-    Deployment Support: Configured Netlify deployment settings
+- Deployment Support: Configured Netlify deployment settings
 
 The AI acted as a pair programmer, suggesting best practices, modern React patterns, and efficient solutions while allowing for custom modifications and design decisions throughout the development process.
