@@ -32,12 +32,15 @@ Crankly is a modern, feature-rich task management application built with React, 
   git clone https://github.com/Morxidia/CapstoneProjectHacktiv8IBMGranite.git
   cd focus-forge
   npm install
+  ```
 2. Start development server
   ```bash
   npm run dev
+  ```
 3. Build for production
   ```bash
   npm run build
+  ```
 
 ---
 
