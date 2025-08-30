@@ -10,13 +10,13 @@ Crankly is a modern, feature-rich task management application built with React, 
 ---
 
 # Features
-1. Task Management: Create, edit, delete, and organize tasks with categories and priorities
-2. Smart Organization: Filter tasks by status (all, pending, completed), priority, and category
-3. Pomodoro Timer: Built-in 25-minute focus timer with break sessions
-4. Subtasks Support: Break down tasks into manageable subtasks with progress tracking
-5. Local Storage: All data persists in your browser—no account needed
-6. Responsive Design: Works perfectly on desktop, tablet, and mobile devices
-7. Quick Actions: Sidebar quick-add and bulk operations (select all, delete all)
+- Task Management: Create, edit, delete, and organize tasks with categories and priorities
+- Smart Organization: Filter tasks by status (all, pending, completed), priority, and category
+- Pomodoro Timer: Built-in 25-minute focus timer with break sessions
+- Subtasks Support: Break down tasks into manageable subtasks with progress tracking
+- Local Storage: All data persists in your browser—no account needed
+- Responsive Design: Works perfectly on desktop, tablet, and mobile devices
+- Quick Actions: Sidebar quick-add and bulk operations (select all, delete all)
 
 ---
 
