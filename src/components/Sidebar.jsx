@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import React from 'react';
-
-import clipboardIcon from '../../public/icons/clipboard.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboard, faHourglass, faCheckCircle, faFire, faBriefcase, faHome, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Sidebar({ tasks, setTasks, activeView, setActiveView, onOpenAddModal }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -12,14 +11,25 @@ function Sidebar({ tasks, setTasks, activeView, setActiveView, onOpenAddModal })
   const pendingTasks = totalTasks - completedTasks;
 
   const menuItems = [
-  { id: 'all', label: 'All Tasks', icon: clipboardIcon, count: totalTasks },
-  { id: 'pending', label: 'Pending', icon: '⏳', count: pendingTasks },
-  { id: 'completed', label: 'Completed', icon: '✅', count: completedTasks },
-  { id: 'high-priority', label: 'High Priority', icon: '🔥', count: tasks.filter(t => t.priority === 'high').length },
-  { id: 'work', label: 'Work', icon: '💼', count: tasks.filter(t => t.category === 'work').length },
-  { id: 'personal', label: 'Personal', icon: '🏠', count: tasks.filter(t => t.category === 'personal').length },
-  ];
-
+  { 
+    id: 'all', 
+    label: 'All Tasks', 
+    icon: <FontAwesomeIcon icon={faClipboard} className="w-4 h-4 " />, 
+    count: totalTasks 
+  },
+  { 
+    id: 'pending', 
+    label: 'Pending', 
+    icon: <FontAwesomeIcon icon={faHourglass} className="w-4 h-4 " />, 
+    count: pendingTasks 
+  },
+  { 
+    id: 'completed', 
+    label: 'Completed', 
+    icon: <FontAwesomeIcon icon={faCheckCircle} className="w-4 h-4 " />, 
+    count: completedTasks 
+  },
+]
   return (
     <div className={`
       bg-slate-800 text-white transition-all duration-300 h-screen fixed lg:relative
@@ -34,7 +44,7 @@ function Sidebar({ tasks, setTasks, activeView, setActiveView, onOpenAddModal })
           onClick={() => setIsCollapsed(!isCollapsed)}
           className="p-2 hover:bg-slate-700 rounded-lg transition-colors"
         >
-          {isCollapsed ? '→' : '←'}
+          {isCollapsed ? <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4 " /> : <FontAwesomeIcon icon={faArrowLeft} className="w-4 h-4 " />}
         </button>
       </div>
 

@@ -5,6 +5,7 @@ import Header from './components/Header';
 import TaskList from './components/TaskList';
 import PomodoroTimer from './components/PomodoroTimer';
 import AddTaskModal from './components/AddTaskModal';
+import './lib/fontawesome' // Import FontAwesome setup
 
 function App() {
   const [tasks, setTasks] = useLocalStorage('Cracnkly-tasks', []);

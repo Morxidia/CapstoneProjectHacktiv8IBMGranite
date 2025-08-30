@@ -1,4 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause,faRefresh, faForward, faVolumeXmark, faVolumeHigh } from '@fortawesome/free-solid-svg-icons'
+
 
 function PomodoroTimer() {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
@@ -9,8 +12,8 @@ function PomodoroTimer() {
   const [soundEnabled, setSoundEnabled] = useState(true);
 
   // Audio URLs - replace these with your own sound file URLs
-  const START_SOUND_URL = '../../public/assets/small-bell-ring-01a.wav';
-  const COMPLETE_SOUND_URL = '../../public/assets/small-bell-ring-01a.wav';
+  const START_SOUND_URL = '../../public/audio/small-bell-ring-01a.wav';
+  const COMPLETE_SOUND_URL = '../../public/audio/small-bell-ring-01a.wav';
   const TICK_SOUND_URL = '';
   // Timer settings
   const FOCUS_TIME = 25 * 60;
@@ -208,14 +211,14 @@ function PomodoroTimer() {
               onClick={startTimer}
               className="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
             >
-              <span className="ml-1">▶</span>
+              <span className="ml-1"><FontAwesomeIcon icon={faPlay} className="w-4 h-4 " /></span>
             </button>
           ) : (
             <button
               onClick={pauseTimer}
               className="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center hover:bg-gray-800 transition-colors"
             >
-              <span className="text-lg">⏸</span>
+              <span className="text-lg"><FontAwesomeIcon icon={faPause} className="w-4 h-4" /></span>
             </button>
           )}
           
@@ -223,14 +226,14 @@ function PomodoroTimer() {
             onClick={resetTimer}
             className="w-16 h-16 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center hover:bg-gray-300 transition-colors"
           >
-            <span className="text-lg">↺</span>
+            <span className="text-lg"><FontAwesomeIcon icon={faRefresh} className="w-4 h-4" /></span>
           </button>
           
           <button
             onClick={skipSession}
             className="w-16 h-16 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center hover:bg-gray-300 transition-colors"
           >
-            <span className="text-lg">⏭</span>
+            <span className="text-lg"><FontAwesomeIcon icon={faForward} className="w-4 h-4" /></span>
           </button>
         </div>
 
@@ -244,7 +247,7 @@ function PomodoroTimer() {
                 : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
             }`}
           >
-            {soundEnabled ? 'Sound On' : 'Sound Off'}
+            {soundEnabled ? <FontAwesomeIcon icon={faVolumeHigh} className="w-4 h-4" /> : <FontAwesomeIcon icon={faVolumeXmark} className="w-4 h-4" />}
           </button>
         </div>
 
