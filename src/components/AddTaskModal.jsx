@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboard, faHourglass, faCheckCircle, faFire, faBriefcase, faHome, faArrowLeft, faArrowRight, faInbox, faFeatherPointed } from '@fortawesome/free-solid-svg-icons'
+
 
 function AddTaskModal({ isOpen, onClose, onAddTask }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [priority, setPriority] = useState('medium');
   const [category, setCategory] = useState('personal');
-
+ 
   // Reset form when modal opens/closes
   useEffect(() => {
     if (isOpen) {
@@ -97,14 +100,13 @@ function AddTaskModal({ isOpen, onClose, onAddTask }) {
           {/* Priority Selection */}
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">
-              Priority
+              <a>Priority</a>
             </label>
-            // Inside the priority selection section, update the buttons:
             <div className="grid grid-cols-3 gap-2">
               {[
-                { value: 'high', icon: '🔥', label: 'High' },
-                { value: 'medium', icon: '⚠️', label: 'Medium' },
-                { value: 'low', icon: '💤', label: 'Low' }
+                { value: 'high', icon: <FontAwesomeIcon icon={faFire} className="w-4 h-4 text-orange-400" />, label: 'High' },
+                { value: 'medium', icon: <FontAwesomeIcon icon={faInbox} className='w-4 h-4'/>, label: 'Medium' },
+                { value: 'low', icon: <FontAwesomeIcon icon={faFeatherPointed} className='w-4 h-4'/>, label: 'Low' }
               ].map(({ value, icon, label }) => (
                 <button
                   key={value}
@@ -139,11 +141,11 @@ function AddTaskModal({ isOpen, onClose, onAddTask }) {
                 onChange={(e) => setCategory(e.target.value)}
                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
               >
-                <option value="personal">🏠 Personal</option>
-                <option value="work">💼 Work</option>
-                <option value="shopping">🛒 Shopping</option>
-                <option value="health">💊 Health</option>
-                <option value="learning">📚 Learning</option>
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="shopping">Shopping</option>
+                <option value="health">Health</option>
+                <option value="learning">Learning</option>
               </select>
           </div>
         </form>

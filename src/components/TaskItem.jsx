@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SubtaskList from './SubtaskList';
-import { PRIORITY_CONFIG, CATEGORY_CONFIG } from '../config/taskConfig';
-
+import { PRIORITY_CONFIG, CATEGORY_CONFIG } from '../config/taskConfig.js';
+ 
 function TaskItem({ task, onToggle, onDelete, onUpdate, isSelected, onSelect }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isEditing, setIsEditing] = useState(false);

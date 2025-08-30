@@ -1,22 +1,6 @@
 import { useState } from 'react';
 import BulkActions from './BulkActions';
 import TaskItem from './TaskItem';
-import { PRIORITY_CONFIG, CATEGORY_CONFIG } from '../config/taskConfig';
-
-// Add these config objects at the top of the file (outside the component)
-// const PRIORITY_CONFIG = {
-//   high: { icon: '🔥', color: 'red', bgColor: 'bg-red-100', textColor: 'text-red-700' },
-//   medium: { icon: '⚠️', color: 'yellow', bgColor: 'bg-yellow-100', textColor: 'text-yellow-700' },
-//   low: { icon: '💤', color: 'green', bgColor: 'bg-green-100', textColor: 'text-green-700' }
-// };
-
-// const CATEGORY_CONFIG = {
-//   personal: { icon: '../../public/icons/user.png', color: 'blue', bgColor: 'bg-blue-100', textColor: 'text-blue-700' },
-//   work: { icon: '💼', color: 'purple', bgColor: 'bg-purple-100', textColor: 'text-purple-700' },
-//   shopping: { icon: '🛒', color: 'orange', bgColor: 'bg-orange-100', textColor: 'text-orange-700' },
-//   health: { icon: '💊', color: 'pink', bgColor: 'bg-pink-100', textColor: 'text-pink-700' },
-//   learning: { icon: '📚', color: 'indigo', bgColor: 'bg-indigo-100', textColor: 'text-indigo-700' }
-// };
 
 function TaskList({ tasks, setTasks }) {
   const [selectedTasks, setSelectedTasks] = useState([]);
@@ -90,7 +74,7 @@ function TaskList({ tasks, setTasks }) {
         >
           <option value="priority">Priority</option>
           <option value="category">Category</option>
-          <option value="none">None (Flat List)</option>
+          <option value="none">None</option>
         </select>
       </div>
 
