@@ -1,54 +1,57 @@
 # Crankly
-Focus Forge is a modern, feature-rich task management application built with React, Vite, and Tailwind CSS. It combines task organization with productivity tools like the Pomodoro technique to help users stay focused and productive.
+Crankly is a modern, feature-rich task management application built with React, Vite, and Tailwind CSS. It combines task organization with productivity tools like the Pomodoro technique to help users stay focused and productive.
 
 # Framework
-  Frontend Framework: React 18 + Vite
-  Styling: Tailwind CSS
-  Icons: FontAwesome SVG icons
-  Storage: Browser LocalStorage
-  Build Tool: Vite
-  Deployment: Netlify
+- [React.js](https://react.dev/) - Frontend Library
+- [Tailwind CSS](https://tailwindcss.com/) - Utility first CSS framework  
+- [FontAwesome](https://fontawesome.com/) - Icons library
+- [Vite](https://vite.dev/) – frontend build tool
+
+---
 
 # Features
-  Task Management: Create, edit, delete, and organize tasks with categories and priorities
-  Smart Organization: Filter tasks by status (all, pending, completed), priority, and category
-  Pomodoro Timer: Built-in 25-minute focus timer with break sessions
-  Subtasks Support: Break down tasks into manageable subtasks with progress tracking
-  Local Storage: All data persists in your browser—no account needed
-  Responsive Design: Works perfectly on desktop, tablet, and mobile devices
-  Quick Actions: Sidebar quick-add and bulk operations (select all, delete all)
+1. Task Management: Create, edit, delete, and organize tasks with categories and priorities
+2. Smart Organization: Filter tasks by status (all, pending, completed), priority, and category
+3. Pomodoro Timer: Built-in 25-minute focus timer with break sessions
+4. Subtasks Support: Break down tasks into manageable subtasks with progress tracking
+5. Local Storage: All data persists in your browser—no account needed
+6. Responsive Design: Works perfectly on desktop, tablet, and mobile devices
+7. Quick Actions: Sidebar quick-add and bulk operations (select all, delete all)
+
+---
 
 # set up project
-Prerequisites
-    Node.js (version 14 or higher)
-    npm or yarn package manager
 
-Installation Steps
-    Clone and setup:
-    bash
+**Prerequisites**
+1. Node.js (version 14 or higher)
+2. npm or yarn package manager
 
-```git clone <your-repo-url>
-cd focus-forge
-npm install```
-
-Start development server:
-bash
-
-npm run dev
-
-Build for production:
-bash
-
+**Installation Steps**
+1. Clone and setup
+  ```bash
+    git clone https://github.com/Morxidia/CapstoneProjectHacktiv8IBMGranite.git
+    cd focus-forge
+    npm install
+2. Start development server
+  ```bash
+    npm run dev
+3. Build for production
+  ```bash
     npm run build
 
-    Deploy to Netlify:
+---
 
-        Drag and drop the dist folder to Netlify
+# AI Support Explanation
+This project was developed with comprehensive AI assistance through IBM Granite Model, and Watsonx AI chat, which provided:
 
-        Or connect your GitHub repo for automatic deployments
+    Architecture Guidance: Recommended React + Vite + Tailwind CSS stack
 
-Accessing the App
+    Code Generation: Produced complete component templates and logic
 
-    Local development: http://localhost:5173
+    Problem Solving: Debugged issues and optimized performance
 
-    Production: Your Netlify app URL
+    Documentation: Created this comprehensive documentation
+
+    Deployment Support: Configured Netlify deployment settings
+
+The AI acted as a pair programmer, suggesting best practices, modern React patterns, and efficient solutions while allowing for custom modifications and design decisions throughout the development process.
