@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BulkActions from './BulkActions';
 import TaskItem from './TaskItem';
+import { PRIORITY_CONFIG, CATEGORY_CONFIG } from '../config/taskConfig';
 
 function TaskList({ tasks, setTasks }) {
   const [selectedTasks, setSelectedTasks] = useState([]);
@@ -74,7 +75,7 @@ function TaskList({ tasks, setTasks }) {
         >
           <option value="priority">Priority</option>
           <option value="category">Category</option>
-          <option value="none">None</option>
+          <option value="none">None (Flat List)</option>
         </select>
       </div>
 
