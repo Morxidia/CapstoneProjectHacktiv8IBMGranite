@@ -1,13 +1,54 @@
-# React + Vite
+# Crankly
+Focus Forge is a modern, feature-rich task management application built with React, Vite, and Tailwind CSS. It combines task organization with productivity tools like the Pomodoro technique to help users stay focused and productive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Framework
+  Frontend Framework: React 18 + Vite
+  Styling: Tailwind CSS
+  Icons: FontAwesome SVG icons
+  Storage: Browser LocalStorage
+  Build Tool: Vite
+  Deployment: Netlify
 
-Currently, two official plugins are available:
+# Features
+  Task Management: Create, edit, delete, and organize tasks with categories and priorities
+  Smart Organization: Filter tasks by status (all, pending, completed), priority, and category
+  Pomodoro Timer: Built-in 25-minute focus timer with break sessions
+  Subtasks Support: Break down tasks into manageable subtasks with progress tracking
+  Local Storage: All data persists in your browser—no account needed
+  Responsive Design: Works perfectly on desktop, tablet, and mobile devices
+  Quick Actions: Sidebar quick-add and bulk operations (select all, delete all)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# set up project
+Prerequisites
+    Node.js (version 14 or higher)
+    npm or yarn package manager
 
-## Expanding the ESLint configuration
+Installation Steps
+    Clone and setup:
+    bash
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# CapstoneProjectHacktiv8IBMGranite
+```git clone <your-repo-url>
+cd focus-forge
+npm install```
+
+Start development server:
+bash
+
+npm run dev
+
+Build for production:
+bash
+
+    npm run build
+
+    Deploy to Netlify:
+
+        Drag and drop the dist folder to Netlify
+
+        Or connect your GitHub repo for automatic deployments
+
+Accessing the App
+
+    Local development: http://localhost:5173
+
+    Production: Your Netlify app URL
